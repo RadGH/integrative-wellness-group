@@ -62,7 +62,7 @@ while ( have_posts() ) : the_post(); ?>
                                     endwhile; ?>
 
                                     <div class="section-Services_Block section-Services_Block-fulllist">
-                                        <div class="section-Services_Content" style="background-image: url('<?php echo $thumbnail_url; ?>');">
+                                        <div class="section-Services_Content">
                                             <h3><a href="<?php bloginfo('url'); ?>/cookbook-quiz/">Don't see what you're looking for?</a></h3>
                                             <a href="<?php bloginfo('url'); ?>/service">See the full list</a>
                                         </div>
