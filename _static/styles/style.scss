@@ -12,8 +12,6 @@ Author URI: http://www.alchemyandaim.com
  * The parts are imported in order of specificty.
  */
 
-@import "_static/styles/_vendor/bootstrap-flex.css"; /* Bootstrap 4 Alpha 3 with flexbox */
-
 @import "_utils/variables"; /* variables*/
 @import "_utils/mixins"; /* mixins, extends etc.*/
 @import "_utils/bootstrap-breakpoints"; /* Bootstrap 4's media breakpoint mixins. */
@@ -739,7 +737,7 @@ section.row {
     }
 
     .owl-prev:before,
-    .owl-next:before, {
+    .owl-next:before {
         font-family: 'fontAwesome';
         font-size: 6rem;
         color: $color-pelorous;
@@ -1063,7 +1061,7 @@ section.section-ServicesNumberBlocks {
         &:nth-child(3),
         &:nth-child(4),
         &:nth-child(9),
-        &:nth-child(10), {
+        &:nth-child(10) {
             background-color: $color-pelorous;
         }
 
@@ -2180,7 +2178,7 @@ body.page-success-stories {
     }
 
     .section-Header h1,
-    .section-Header h2, {
+    .section-Header h2 {
         font-size: 4.4rem;
         text-transform: uppercase;
         font-weight: 700;
