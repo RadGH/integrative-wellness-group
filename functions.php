@@ -156,7 +156,7 @@ function top_nav_wrap() {
 	$wrap .= '%3$s';
 
 	// the view cart link
-	$wrap .= $new_item;
+	if ( isset($new_item) ) $wrap .= $new_item;
 
 	// close the <ul>
 	$wrap .= '</ul>';
