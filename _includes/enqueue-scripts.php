@@ -18,6 +18,8 @@ function aa_enqueue_scripts() {
 	 * @link http://v4-alpha.getbootstrap.com/
 	 * @version 4.0.0-alpha.3
 	 */
+	wp_register_script( 'tether', get_template_directory_uri() . '/_static/js/vendor/tether.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'tether' );
 	wp_register_script( 'bootstrap', get_template_directory_uri() . '/_static/js/vendor/bootstrap.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'bootstrap' );
 
