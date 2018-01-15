@@ -109,7 +109,7 @@ include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-image-crop
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-sidebar-selector-field/acf-sidebar_selector.php');
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-menu-selector-field/acf-menus.php');
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-background/acf-background.php');
-include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-rgba-color-field/acf-extended-color-picker.php');
+include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-rgba-color-field/acf-rgba-color-picker.php');
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-code-field/acf-code-field.php');
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-font-awesome/acf-font-awesome.php');
 include_once( get_stylesheet_directory() . '/_includes/acf-addons/acf-justified-image-grid/acf-justified-image-grid.php');
