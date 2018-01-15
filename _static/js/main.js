@@ -1,7 +1,7 @@
 /**
  * Main JS file where all custom JS is done
  */
-(function($) {
+jQuery(function($) {
 "use strict";
 	var $body = $('body');
 
@@ -204,7 +204,6 @@
 	};
 
 	$(document).ready( function() {
-
 		subMenuJS();
 		searchBarJS();
 		modalVideo();
@@ -256,7 +255,7 @@
 
 	}); // document.ready()
 
-})(jQuery);
+});
 
 jQuery(function($) {
 	"use strict";
