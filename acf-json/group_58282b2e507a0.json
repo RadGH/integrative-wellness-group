@@ -1,0 +1,874 @@
+{
+    "key": "group_58282b2e507a0",
+    "title": "Custom Content Sections",
+    "fields": [
+        {
+            "key": "field_58282b475317f",
+            "label": "Content Sections",
+            "name": "content_sections",
+            "type": "flexible_content",
+            "instructions": "Add content sections to the page. There are different options for different types of sections. Add as many as you like.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "58282b5a25e8a",
+                    "name": "contained_content",
+                    "label": "Contained Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58283221b54df",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5828389984590",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58282ba953180",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_58282bc553181",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5828367866ffd",
+                    "name": "full-width_content",
+                    "label": "Full-width Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5828367866ffe",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_582838818458f",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5828367866fff",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_5828367867000",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58291ac9622f0",
+                    "name": "full-width_content_banner",
+                    "label": "Full-width Content Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58291ac9622f1",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58291ac9622f2",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58291ac9622f4",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "582d8d2d0ebf2",
+                    "name": "new_here_blocks",
+                    "label": "\"New Here\" Blocks",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_582d8d2d0ebf3",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_582d8d2d0ebf4",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_582d8d2d0ebf5",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_582d8d5e0ebf7",
+                            "label": "Blocks",
+                            "name": "blocks",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_582d8d8678834",
+                                    "label": "Block Content",
+                                    "name": "block_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "582e6e26f1f7c",
+                    "name": "get_started_blocks",
+                    "label": "\"Get Started\" Blocks",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_582e6e26f1f7d",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_582e6e26f1f7e",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_582e6e26f1f7f",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_582e6e26f1f80",
+                            "label": "Blocks",
+                            "name": "blocks",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_582e6e26f1f81",
+                                    "label": "Block Content",
+                                    "name": "block_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_582e6e3af1f82",
+                            "label": "Footer",
+                            "name": "footer",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "582919d8ae18c",
+                    "name": "full-width_image",
+                    "label": "Full-width Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_582919f7ae18e",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "Should be at least 1360px wide",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_582919e4ae18d",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58291a36ae18f",
+                    "name": "images_row",
+                    "label": "Images Row",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5829218a4a35e",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_582921ba4a35f",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58291a43ae190",
+                            "label": "Images",
+                            "name": "images",
+                            "type": "repeater",
+                            "instructions": "Add 2 or 3 images",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "row",
+                            "button_label": "Add Image",
+                            "sub_fields": [
+                                {
+                                    "key": "field_58291a6cae191",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "full",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "582927c8f43f9",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_582927c8f43fa",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_582927c8f43fb",
+                            "label": "Section ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "(developer use only, optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_582927d3f43fe",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_582927daf43ff",
+                            "label": "Accordion Items",
+                            "name": "accordion_items",
+                            "type": "repeater",
+                            "instructions": "Add Q&A pairs",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_582927fef4400",
+                                    "label": "Question",
+                                    "name": "question",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5829280af4401",
+                                    "label": "Answer",
+                                    "name": "answer",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_58292820f4402",
+                            "label": "Include Content",
+                            "name": "include_content",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Include Content on right?",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_58292b22f4403",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_58292820f4402",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-custom-page.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1481543270
+}

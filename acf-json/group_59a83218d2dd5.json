@@ -1,0 +1,498 @@
+{
+    "key": "group_59a83218d2dd5",
+    "title": "Treatment Page Flexible Content Editor",
+    "fields": [
+        {
+            "key": "field_59a83258c2cd2",
+            "label": "Flexible Content",
+            "name": "flexible_content",
+            "type": "flexible_content",
+            "instructions": "Add treatment page sections here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "59a8327ed0686",
+                    "name": "testimonial_section",
+                    "label": "Testimonial Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a832a4c2cd3",
+                            "label": "Author Headshot",
+                            "name": "author_headshot",
+                            "type": "image",
+                            "instructions": "Upload an image here for the testimonial author.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_59a83343c2cd4",
+                            "label": "Author Text",
+                            "name": "autor_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter the author testimonial text here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a83376c2cd5",
+                    "name": "two_column_text_section",
+                    "label": "Two Column Text Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a8338dc2cd6",
+                            "label": "Column One Text",
+                            "name": "column_one_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter some text for this column here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_59a833a9c2cd7",
+                            "label": "Column Two Text",
+                            "name": "column_two_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter some text for this column here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a833c5c2cd8",
+                    "name": "what_we_found_section",
+                    "label": "What We Found Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a833d5c2cd9",
+                            "label": "What We Found Title",
+                            "name": "what_we_found_title",
+                            "type": "text",
+                            "instructions": "Enter the title for this section here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59a833f0c2cda",
+                            "label": "What We Found Text",
+                            "name": "what_we_found_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter the text for this section here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a83402c2cdb",
+                    "name": "fun_fact_section",
+                    "label": "Fun Fact Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a8340dc2cdc",
+                            "label": "Fun Fact Title",
+                            "name": "fun_fact_title",
+                            "type": "text",
+                            "instructions": "Enter the title for the section here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "FUN FACT:",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59a83430c2cdd",
+                            "label": "Fun Fact Text",
+                            "name": "fun_fact_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter the text for the section here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a8344ac2cde",
+                    "name": "results_section",
+                    "label": "Results Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a83456c2cdf",
+                            "label": "Result Blocks",
+                            "name": "result_blocks",
+                            "type": "repeater",
+                            "instructions": "Add monthly results here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59a83468c2ce0",
+                                    "label": "Result Block",
+                                    "name": "result_block",
+                                    "type": "wysiwyg",
+                                    "instructions": "Add result block text here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a834acc2ce1",
+                    "name": "diagram_section",
+                    "label": "Diagram Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a834b8c2ce2",
+                            "label": "Diagram Image",
+                            "name": "diagram_image",
+                            "type": "image",
+                            "instructions": "Upload an image here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_59a834d0c2ce3",
+                            "label": "Diagram Text",
+                            "name": "diagram_text",
+                            "type": "wysiwyg",
+                            "instructions": "Add the diagram section text here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a834edc2ce4",
+                    "name": "icon_text_list_section",
+                    "label": "Icon & Text List Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a83503c2ce5",
+                            "label": "Icon & Text Blocks",
+                            "name": "icon_text_blocks",
+                            "type": "repeater",
+                            "instructions": "Add icon & text list blocks here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59a83522c2ce6",
+                                    "label": "Icon Image",
+                                    "name": "icon_image",
+                                    "type": "image",
+                                    "instructions": "Upload an icon image here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_59a83553c2ce7",
+                                    "label": "Icon Text",
+                                    "name": "icon_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "Enter the text for the icon here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "75",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "59a83582c2ce8",
+                    "name": "contact_section",
+                    "label": "Contact Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59a83594c2ce9",
+                            "label": "CTA Text",
+                            "name": "cta_text",
+                            "type": "wysiwyg",
+                            "instructions": "Enter the CTA text here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_59a835acc2cea",
+                            "label": "CTA Button Label",
+                            "name": "cta_button_label",
+                            "type": "text",
+                            "instructions": "Enter the button label here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59a835cbc2ceb",
+                            "label": "CTA Button Link",
+                            "name": "cta_button_link",
+                            "type": "page_link",
+                            "instructions": "Select the button link here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_59a835edc2cec",
+                            "label": "Contact Form Shortcode",
+                            "name": "contact_form_shortcode",
+                            "type": "text",
+                            "instructions": "Enter the Gravity form shortcode for this form here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-treatment-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1504198035
+}

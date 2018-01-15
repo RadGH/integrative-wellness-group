@@ -1,0 +1,41 @@
+{
+    "key": "group_58351083209bd",
+    "title": "Featured Post",
+    "fields": [
+        {
+            "key": "field_583510a5daac8",
+            "label": "Featured Post",
+            "name": "featured_post",
+            "type": "true_false",
+            "instructions": "Pin this post to the top of the blog page. Note: the featured post will not show in the normal blog feed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Display as featured on the home blog page?",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "local": "php",
+    "modified": 1484171304
+}

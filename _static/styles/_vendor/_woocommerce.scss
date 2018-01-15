@@ -1,0 +1,23 @@
+/****************************
+Woocommerce Styles
+Putting style overrides into the
+following code blocks will provide enough
+specificity to override most woocommerce styles
+****************************/
+
+body .woocommerce,
+body.woocommerce {
+
+}
+
+body .woocommerce,
+body .woocommerce-page,
+body.woocommerce,
+body.woocommerce-page {
+
+}
+
+body.woocommerce-cart,
+body.woocommerce-checkout {
+    
+}

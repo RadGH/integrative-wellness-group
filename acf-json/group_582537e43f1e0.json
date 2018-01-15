@@ -1,0 +1,524 @@
+{
+    "key": "group_582537e43f1e0",
+    "title": "Home Page Fields",
+    "fields": [
+        {
+            "key": "field_582537f191536",
+            "label": "Home Page Sections",
+            "name": "home_page_sections",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "58253821329e1",
+                    "name": "logos",
+                    "label": "Logos",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5825383091537",
+                            "label": "Logos",
+                            "name": "logos",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": "",
+                            "max": "",
+                            "insert": "append",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                {
+                    "key": "58253af5ef3a9",
+                    "name": "services",
+                    "label": "Services",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58254614bae2c",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_5825463cbae2d",
+                            "label": "Services",
+                            "name": "services",
+                            "type": "repeater",
+                            "instructions": "Add services to display on the home page",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Service",
+                            "sub_fields": [
+                                {
+                                    "key": "field_582546e25bd7e",
+                                    "label": "Service Text",
+                                    "name": "service_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_582546f95bd7f",
+                                    "label": "Service Page",
+                                    "name": "service_page",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "object",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_5825476ee014f",
+                                    "label": "Service Image",
+                                    "name": "service_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                {
+                    "key": "58253afeef3aa",
+                    "name": "team",
+                    "label": "Team",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58254675e27a7",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_58254687e27a8",
+                            "label": "Team Members",
+                            "name": "team_members",
+                            "type": "post_object",
+                            "instructions": "Select which team members to display on the home page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "team_member"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                {
+                    "key": "5825690a0fe00",
+                    "name": "blog",
+                    "label": "Blog",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5825690f0fe01",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                {
+                    "key": "58257530f7734",
+                    "name": "success_story",
+                    "label": "Success Story",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5825753bf7735",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_58257551f7736",
+                            "label": "Story",
+                            "name": "story",
+                            "type": "post_object",
+                            "instructions": "Select a success story to display on the home page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "success_story"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                {
+                    "key": "58257e78c40c2",
+                    "name": "full-width_content",
+                    "label": "Full-width Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58257edd49b30",
+                            "label": "Header",
+                            "name": "header",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_58257e82c40c3",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_58257ff5d4bc6",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "Optional. If left blank will default to white. Will not show if a Background Image has been set.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alabaster": "Off White",
+                                "pampas": "Light Tan",
+                                "sandstone": "Brown",
+                                "pelorous": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58257fadd4bc4",
+                            "label": "Background Image",
+                            "name": "background_image",
+                            "type": "image",
+                            "instructions": "Optional. Will display a background-image behind the content.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "596d04bbb259a",
+                    "name": "icon_text_list_block",
+                    "label": "Icon & Text List Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_596d04dfb259b",
+                            "label": "Intro Text",
+                            "name": "intro_text",
+                            "type": "wysiwyg",
+                            "instructions": "Add some intro text that will appear above the icon list.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_596d0502b259c",
+                            "label": "Icon List",
+                            "name": "icon_list",
+                            "type": "repeater",
+                            "instructions": "Add icon list items here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_596d0581b259d",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "image",
+                                    "instructions": "Upload an icon image here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_596d0631b259f",
+                                    "label": "Icon Url",
+                                    "name": "icon_url",
+                                    "type": "url",
+                                    "instructions": "Enter the url for the icon here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "75",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_596d061cb259e",
+                                    "label": "Icon Text",
+                                    "name": "icon_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "Add the icon text here.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "31"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1500323115
+}

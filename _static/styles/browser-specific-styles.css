@@ -1,0 +1,20 @@
+/**
+ * Browser Specific Styles
+ *
+ * Fixes for specific browser versions
+*/
+
+.browser-Explorer #page-wrapper {
+    display: block !important;
+}
+
+
+.browser-Explorer body.blog article.post .post-Thumbnail img,
+.browser-Explorer body.archive.category article.post .post-Thumbnail img,
+.browser-Explorer body.search-results article.post .post-Thumbnail img {
+    height: auto;
+}
+
+.browser-Explorer .gform_wrapper input:not([type=radio]):not([type=file]):not([type=image]):not([type=button]):not([type=submit]):not([type=checkbox]) {
+    padding: 1rem 2.5rem !important;
+}

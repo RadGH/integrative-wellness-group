@@ -1,0 +1,296 @@
+{
+    "key": "group_5890c401b5f20",
+    "title": "Slider Banner Header",
+    "fields": [
+        {
+            "key": "field_5890c56d8f16a",
+            "label": "Header Slider",
+            "name": "header_slider",
+            "type": "repeater",
+            "instructions": "Add slides for the hero slider here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "block",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_5890c5908f16b",
+                    "label": "Slider Background Image",
+                    "name": "slider_background_image",
+                    "type": "image",
+                    "instructions": "Add slide images here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5890c6018f16d",
+                    "label": "Text Position and Width",
+                    "name": "text_position_and_width",
+                    "type": "select",
+                    "instructions": "Select the text position and width here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "max-width:100%;": "Full Width Center",
+                        "max-width:50%;": "Half Width Left",
+                        "max-width:50%;margin-left:50%;": "Half Width Right"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5890c5b68f16c",
+                    "label": "Slider Text",
+                    "name": "slider_text",
+                    "type": "wysiwyg",
+                    "instructions": "Add slider text here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_58d3fd0e98d3d",
+                    "label": "Banner Video URL",
+                    "name": "banner_video_url",
+                    "type": "url",
+                    "instructions": "optional. Adds a play button to the banner. Paste in a full Vimeo or Youtube URL.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_58d3fd3298d3e",
+                    "label": "Banner Button URL",
+                    "name": "banner_button_url",
+                    "type": "url",
+                    "instructions": "Optional. Paste in a full URL if a button is needed.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_58d3fd4d98d3f",
+                    "label": "Banner Button Text",
+                    "name": "banner_button_text",
+                    "type": "text",
+                    "instructions": "Text for the button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_58d3fc3498d38",
+            "label": "Include Header Banner?",
+            "name": "include_header_banner",
+            "type": "radio",
+            "instructions": "Select what banner to include below the header",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no_banner": "No banner",
+                "newsletter": "Signup banner",
+                "content": "Custom content banner"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_58d3fc0698d37",
+            "label": "Signup Banner Heading",
+            "name": "signup_banner_heading-header",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58d3fc3498d38",
+                        "operator": "==",
+                        "value": "newsletter"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_58d3fc7198d39",
+            "label": "Override IFS Form",
+            "name": "override_ifs_form",
+            "type": "true_false",
+            "instructions": "Select this if you would like to override the form code set in Theme Settings for this instance only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Override IFS Form Code?",
+            "default_value": 0
+        },
+        {
+            "key": "field_58d3fc8c98d3a",
+            "label": "Signup Banner Form",
+            "name": "signup_banner_form-header",
+            "type": "textarea",
+            "instructions": "Paste in the form code",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58d3fc3498d38",
+                        "operator": "==",
+                        "value": "newsletter"
+                    },
+                    {
+                        "field": "field_58d3fc7198d39",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": ""
+        },
+        {
+            "key": "field_58d3fcd998d3c",
+            "label": "Custom Content Banner",
+            "name": "custom_content_banner-header",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58d3fc3498d38",
+                        "operator": "==",
+                        "value": "content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-slider-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490391465
+}

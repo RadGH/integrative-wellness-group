@@ -1,0 +1,49 @@
+{
+    "key": "group_583b97c07f7a2",
+    "title": "Single Post Banner Image",
+    "fields": [
+        {
+            "key": "field_583b97d9eee56",
+            "label": "Single Post Banner Image",
+            "name": "single_post_banner_image",
+            "type": "image",
+            "instructions": "Add a separate banner image for single post pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "local": "php",
+    "modified": 1484171304
+}

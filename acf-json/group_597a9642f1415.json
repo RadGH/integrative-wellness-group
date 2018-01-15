@@ -1,0 +1,286 @@
+{
+    "key": "group_597a9642f1415",
+    "title": "Header Banner Treatment Page",
+    "fields": [
+        {
+            "key": "field_597a96431b49d",
+            "label": "Banner Image",
+            "name": "banner_image",
+            "type": "image",
+            "instructions": "Should be at least 1360 x 620",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_597a9676d135c",
+            "label": "Banner Header Tint",
+            "name": "header_tint",
+            "type": "text",
+            "instructions": "Enter the value for the degree of tint opacity over the image. This makes text more legible depending on the image chosen for the header. <em>0.0 is transparent were 1.0 is opaque.<\/em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "0.4",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597a96431b52f",
+            "label": "Banner Video URL",
+            "name": "banner_video_url",
+            "type": "url",
+            "instructions": "optional. Adds a play button to the banner. Paste in a full Vimeo or Youtube URL.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_597a96431b5af",
+            "label": "Banner Heading",
+            "name": "banner_heading",
+            "type": "text",
+            "instructions": "Optional. If left blank will display the page title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597a96431b625",
+            "label": "Banner Subheading",
+            "name": "banner_subheading",
+            "type": "text",
+            "instructions": "Optional.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597a96431b698",
+            "label": "Banner Button URL",
+            "name": "banner_button_url",
+            "type": "url",
+            "instructions": "Optional. Paste in a full URL if a button is needed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_597a96431b70e",
+            "label": "Banner Button Text",
+            "name": "banner_button_text",
+            "type": "text",
+            "instructions": "Text for the button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597a96431b781",
+            "label": "Include Header Banner?",
+            "name": "include_header_banner",
+            "type": "radio",
+            "instructions": "Select what banner to include below the header",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no_banner": "No banner",
+                "newsletter": "Signup banner",
+                "content": "Custom content banner"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "no_banner",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_597a96431b808",
+            "label": "Signup Banner Heading",
+            "name": "signup_banner_heading-header",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_597a96431b781",
+                        "operator": "==",
+                        "value": "newsletter"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_597a96431b87c",
+            "label": "Override IFS Form",
+            "name": "override_ifs_form",
+            "type": "true_false",
+            "instructions": "Select this if you would like to override the form code set in Theme Settings for this instance only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Override IFS Form Code?",
+            "default_value": 0
+        },
+        {
+            "key": "field_597a96431b8ee",
+            "label": "Signup Banner Form",
+            "name": "signup_banner_form-header",
+            "type": "textarea",
+            "instructions": "Paste in the form code",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_597a96431b781",
+                        "operator": "==",
+                        "value": "newsletter"
+                    },
+                    {
+                        "field": "field_597a96431b87c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": ""
+        },
+        {
+            "key": "field_597a96431b966",
+            "label": "Custom Content Banner",
+            "name": "custom_content_banner-header",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_597a96431b781",
+                        "operator": "==",
+                        "value": "content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-treatment-page.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "comments",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1501206891
+}

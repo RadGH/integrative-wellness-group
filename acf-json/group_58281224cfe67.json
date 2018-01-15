@@ -1,0 +1,150 @@
+{
+    "key": "group_58281224cfe67",
+    "title": "Footer Banner",
+    "fields": [
+        {
+            "key": "field_5828124da9e43",
+            "label": "Include Footer Banner?",
+            "name": "include_footer_banner",
+            "type": "radio",
+            "instructions": "Select what banner to include above the footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no_banner": "No banner",
+                "newsletter": "Signup banner",
+                "content": "Custom content banner"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "no_banner",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_582812dda9e44",
+            "label": "Signup Banner Heading",
+            "name": "signup_banner_heading-footer",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5828124da9e43",
+                        "operator": "==",
+                        "value": "newsletter"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_582d62d9fc42f",
+            "label": "Override IFS Form",
+            "name": "override_ifs_form-footer",
+            "type": "true_false",
+            "instructions": "Select this if you would like to override the form code set in Theme Settings for this instance only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Override IFS Form Code?",
+            "default_value": 0
+        },
+        {
+            "key": "field_58281364a9e49",
+            "label": "Signup Banner Form",
+            "name": "signup_banner_form-footer",
+            "type": "textarea",
+            "instructions": "Paste in the form code",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5828124da9e43",
+                        "operator": "==",
+                        "value": "newsletter"
+                    },
+                    {
+                        "field": "field_582d62d9fc42f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": ""
+        },
+        {
+            "key": "field_58281384a9e4a",
+            "label": "Custom Content Banner",
+            "name": "custom_content_banner-footer",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5828124da9e43",
+                        "operator": "==",
+                        "value": "content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "local": "php",
+    "modified": 1484171304
+}

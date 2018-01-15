@@ -1,0 +1,175 @@
+/*
+Add custom fonts here.
+*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@font-face {
+	font-family: 'Acumin Pro SemiCondensed';
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold.svg#7db59eafe919849aca5debe077f54361') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Acumin Pro SemiCondensed';
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Bold_Italic.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Bold_Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold_Italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold_Italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/acumin/Acumin_Pro_SemiCond_Bold_Italic.svg#919c10b470e2ecbc958c583a7431d3ba') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Acumin Pro SemiCondensed';
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Book_Italic.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Book_Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book_Italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book_Italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book_Italic.svg#b49ca0ce051f0520a287dba59cf28448') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Acumin Pro SemiCondensed';
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Book.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/acumin/Acumin_Pro_SemiCond_Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book.woff') format('woff'), /* Modern Browsers */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/acumin/Acumin_Pro_SemiCond_Book.svg#2f76f89a72707f5afd0003acd627242a') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Adobe Garamond Pro Bold';
+	src: url('../fonts/garamond/AGaramondPro-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/garamond/AGaramondPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/garamond/AGaramondPro-Bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/garamond/AGaramondPro-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/garamond/AGaramondPro-Bold.svg#3ba63f82a1b13c399d199d455e95ce26') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Adobe Garamond Pro Bold';
+	src: url('../fonts/garamond/AGaramondPro-BoldItalic.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/garamond/AGaramondPro-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/garamond/AGaramondPro-BoldItalic.woff') format('woff'), /* Modern Browsers */ url('../fonts/garamond/AGaramondPro-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/garamond/AGaramondPro-BoldItalic.svg#fc87d529a9b2a903681f36cd7c9d9a39') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Adobe Garamond Pro';
+	src: url('../fonts/garamond/AGaramondPro-Italic.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/garamond/AGaramondPro-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/garamond/AGaramondPro-Italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/garamond/AGaramondPro-Italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/garamond/AGaramondPro-Italic.svg#e62a4d531f55b2f8bdfd398331ec8604') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Adobe Garamond Pro';
+	src: url('../fonts/garamond/AGaramondPro-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/garamond/AGaramondPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/garamond/AGaramondPro-Regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/garamond/AGaramondPro-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/garamond/AGaramondPro-Regular.svg#1eabc8b27c1d378ed9b1f5dd58b5095c') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Learning Curve';
+	src: url('../fonts/learningcurve/LearningCurve_OT-webfont.eot');
+	src: url('../fonts/learningcurve/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/learningcurve/LearningCurve_OT-webfont.woff') format('woff'), url('../fonts/learningcurve/LearningCurve_OT-webfont.ttf') format('truetype'), url('../fonts/learningcurve/LearningCurve_OT-webfont.svg#learning_curve_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* group clearfix */
+.index-php .welcome-panel:before,
+.index-php .welcome-panel:after {
+    content: "";
+    display: table;
+}
+.index-php .welcome-panel:after {
+    clear: both;
+}
+.index-php .welcome-panel {
+    zoom: 1;
+	height: auto;
+	min-height: 450px;
+}
+
+/* Welcome Panel */
+.index-php .welcome-panel .index-php .welcome-panel-close {
+	display: none;
+}
+.index-php .welcome-panel-content {
+	display: none;
+}
+.index-php .welcome-panel:before {
+}
+.index-php .welcome-panel {
+	padding: 50px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/alchemy-and-aim-homepage-header.jpg);
+	position: relative;
+	background-size: cover;
+}
+.index-php .welcome-panel .preview-thumb:before {
+	background-image: url(../../images/arrow.png);
+	z-index: 999;
+	position: absolute;
+	content: " ";
+	width: 18px;
+	height: 425px;
+	top: -28px;
+	left: 47%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 5px;
+}
+.index-php .welcome-panel .preview-thumb {
+	float: left;
+	margin-right: 25px;
+}
+.index-php .welcome-panel .preview-thumb img {
+	max-width: 300px;
+	padding: 3px;
+	border: 1px solid #fff;
+}
+.index-php .welcome-panel a {
+	color: #AE8231;
+}
+.index-php .welcome-panel p {
+	color: #fff !important;
+	font: 400 15px 'Acumin Pro SemiCondensed', 'PT Sans Narrow', sans-serif;
+	letter-spacing: 0.08em;
+	line-height: 1.5;
+}
+.index-php .welcome-panel .sig {
+	padding-top: 50px;
+	background-image: url(../../images/blogsignature.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+.index-php .welcome-panel .theme-specs {
+	width: 100%;
+	clear: both;
+}
+.theme-specs h4, .theme-specs li {
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: .2em;
+	margin: 1.5em 0 -1.5em 0;
+}
+.theme-specs h4 {
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top: 35px;
+}
+.theme-specs p {
+	margin-top: 1.5em;
+}
+.index-php .welcome-panel h1.heading {
+	color: #fff;
+	display: inline-block;
+	font: 400 44px "Adobe Garamond Pro", serif;
+	letter-spacing: 0;
+	text-transform: lowercase;
+	padding: 20px 48px 20px 0;
+	text-align: left;
+}
+
+
+/*
+* Additional custom admin styles
+*/
+.index-php .welcome-panel h3 {
+	background-color: #4c5868;
+	color: white !important;
+}

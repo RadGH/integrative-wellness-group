@@ -1,0 +1,12 @@
+{
+  "name": "wp-bare-theme",
+  "version": "0.0.1",
+  "description": "A + A base theme to start new WordPress project",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-ruby-sass": "^2.0.6"
+  }
+}
