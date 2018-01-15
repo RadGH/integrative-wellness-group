@@ -1,2 +1,4 @@
-Notes about the theme go here
+Integrative Wellness Group
 ==============================
+
+A custom WordPress theme by Alchemy+Aim
