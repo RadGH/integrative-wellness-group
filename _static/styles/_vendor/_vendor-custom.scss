@@ -53,6 +53,7 @@ img.aligncenter {
 
 
 /* mm-menu styles */
+/*
 body .mm-menu {
     display: none;
     background-color: rgba($color-white, 0.6);
@@ -145,6 +146,7 @@ body .mm-menu {
         }
     }
 }
+*/
 
 body .remodal {
     background-color: $color-white;
@@ -152,4 +154,14 @@ body .remodal {
     .arve-wrapper {
         margin-bottom: 0;
     }
+}
+
+// Push notification button
+html .pushcrew-chicklet-position-tr {
+    top: 146px;
+}
+
+// Fix button floating in mega menu when sliding back
+ul.mega-sub-menu {
+    overflow: hidden;
 }
