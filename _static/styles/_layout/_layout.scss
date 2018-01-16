@@ -85,15 +85,13 @@ nav {
     }
 
     .nav-link,
-    #off-canvas-nav-button,
-    #mobile-nav-button {
+    #off-canvas-nav-button {
         @include link-effect-nav;
     }
 
-    #off-canvas-nav-button,
-    #mobile-nav-button {
+    #off-canvas-nav-button {
         margin-left: auto;
-        background-image: url('_static/images/icon-Menu.png');
+        background-image: url('/wp-content/themes/wp-integrativewellness-theme/_static/images/icon-Menu.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 29px;
@@ -113,17 +111,6 @@ nav {
                 flex-basis: 185px;
         }
 
-        @include media-breakpoint-down(md) {
-            display: none;
-        }
-    }
-
-    #mobile-nav-button {
-        display: none;
-
-        @include media-breakpoint-down(md) {
-            display: block;
-        }
     }
 
     li {
@@ -158,6 +145,32 @@ nav {
         top: 0 !important;
         bottom: auto !important;
         width: 100%;
+    }
+}
+
+#off-canvas-close-button {
+    position: absolute;
+    top: 7px;
+    right: 18px;
+
+    padding: 10px 0;
+    width: 48px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-desktop {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.menu-mobile {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+        display: block;
     }
 }
 

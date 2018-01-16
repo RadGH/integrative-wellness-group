@@ -24,7 +24,60 @@ while ( have_posts() ) : the_post(); ?>
             while ( have_rows('home_page_sections') ) : the_row(); ?>
 
                 <?php
-                if ( get_row_layout() == 'services' ) : ?>
+                if ( get_row_layout() == 'programs' ) :
+                   ?>
+                    <section class="row section-Services">
+                        <div class="container"><div class="row">
+
+                            <?php
+                            if ( get_sub_field('header') ) : ?>
+                                <header class="col-xs-12 section-Header">
+                                    <?php the_sub_field('header'); ?>
+                                </header>
+                                <?php
+                            endif; ?>
+
+                            <?php
+                            if ( have_rows('services') ) : ?>
+
+                                <div class="col-xs-12 section-Services_Blocks">
+
+                                    <?php
+                                    while ( have_rows('services') ) : the_row();
+                                        $service_image = get_sub_field('service_image');
+                                        $service_post_object = get_sub_field('service_page');
+                                        // override $post temporarily
+                                    	$post = $service_post_object;
+                                    	setup_postdata($post);
+                                            $service_page_url = get_permalink();
+                                        wp_reset_postdata(); ?>
+
+                                        <div class="section-Services_Block">
+                                            <a href="<?php echo $service_page_url; ?>" class="section-Services_Content" style="background-image: url('<?php echo $service_image["url"]; ?>');">
+                                                <span><?php the_sub_field('service_text'); ?></span>
+                                            </a>
+                                        </div>
+
+                                    <?php
+                                    endwhile; ?>
+
+                                    <div class="section-Services_Block section-Services_Block-fulllist">
+                                        <div class="section-Services_Content">
+                                            <h3><a href="<?php bloginfo('url'); ?>/cookbook-quiz/">Don't see what you're looking for?</a></h3>
+                                            <a href="<?php bloginfo('url'); ?>/service">See the full list</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            <?php
+                            endif; ?>
+
+                        </div></div>
+                    </section>
+
+                <?php
+                elseif ( get_row_layout() == 'services' ) : ?>
 
                     <section class="row section-Services">
                         <div class="container"><div class="row">

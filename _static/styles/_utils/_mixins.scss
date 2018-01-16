@@ -126,22 +126,22 @@ contains global mixins, functions, helper selectors, etc.
 
 @font-face {
     font-family: 'Cheddar Jack';
-    src: url('_static/fonts/cheddarjack/cheddar-jack.eot'); /* IE9 Compat Modes */
-    src: url('_static/fonts/cheddarjack/cheddar-jack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('_static/fonts/cheddarjack/cheddar-jack.woff') format('woff'), /* Modern Browsers */
-        url('_static/fonts/cheddarjack/cheddar-jack.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('_static/fonts/cheddarjack/cheddar-jack.svg#6070d0c49a46111b45ed678eca1811f7') format('svg'); /* Legacy iOS */
+    src: url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/cheddarjack/cheddar-jack.eot'); /* IE9 Compat Modes */
+    src: url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/cheddarjack/cheddar-jack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/cheddarjack/cheddar-jack.woff') format('woff'), /* Modern Browsers */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/cheddarjack/cheddar-jack.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/cheddarjack/cheddar-jack.svg#6070d0c49a46111b45ed678eca1811f7') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Linowrite';
-    src: url('_static/fonts/linowrite/linowrite.eot'); /* IE9 Compat Modes */
-    src: url('_static/fonts/linowrite/linowrite.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('_static/fonts/linowrite/linowrite.woff') format('woff'), /* Modern Browsers */
-        url('_static/fonts/linowrite/linowrite.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('_static/fonts/linowrite/linowrite.svg#c556331de98ff0977430dade00c6c714') format('svg'); /* Legacy iOS */
+    src: url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/linowrite/linowrite.eot'); /* IE9 Compat Modes */
+    src: url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/linowrite/linowrite.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/linowrite/linowrite.woff') format('woff'), /* Modern Browsers */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/linowrite/linowrite.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/wp-content/themes/wp-integrativewellness-theme/_static/fonts/linowrite/linowrite.svg#c556331de98ff0977430dade00c6c714') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: 400;
 }

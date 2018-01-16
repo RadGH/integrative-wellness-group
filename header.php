@@ -36,6 +36,7 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
+	
 	<link href="//addtocalendar.com/atc/1.5/atc-style-button-icon.css" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript">
@@ -56,40 +57,35 @@
 </head>
 
 <body <?php body_class('page-' . $post->post_name); ?>>
+<div class="site">
 
-	<div id="off-canvas-nav" class="mm-menu mm-offcanvas mm-right mm-front ">
-		<div class="mm-panels">
-<div class="mm-panel mm-opened mm-current" id="mm-1">
+	<div id="off-canvas-nav" class="mm-menu">
+		<div>
 			<a href="#" id="off-canvas-close-button">X</a>
-			<?php
-			wp_nav_menu( array(
-				'menu'       => 'off-canvas-nav',
-				'menu_class' => 'nav navbar-nav',
-				'container'  => false,
-			));
-			?>
-			<?php get_template_part('_template-parts/component', 'social-follow'); ?>
-</div>
+			
+			<div id="mm-1" class="menu-desktop">
+				<?php
+				wp_nav_menu( array(
+					'menu'       => 'off-canvas-nav',
+					'menu_class' => 'nav navbar-nav',
+					'container'  => false,
+				));
+				?>
+				<?php get_template_part('_template-parts/component', 'social-follow'); ?>
+			</div>
+			<div id="mm-2" class="menu-mobile">
+				<?php
+				wp_nav_menu( array(
+					'menu'       => 'mobile-nav',
+					'menu_class' => 'nav navbar-nav',
+					'container'  => false,
+				) );
+				?>
+				<?php get_template_part( '_template-parts/component', 'social-follow' ); ?>
+			</div>
 		</div>
 	</div>
-
-	<div id="mobile-nav" class="mm-menu mm-menu mm-offcanvas mm-right mm-front mm-hasnavbar-top-1">
-<div class="mm-navbar mm-navbar-top mm-navbar-top-1 mm-navbar-size-1 mm-hasbtns"><a class="mm-prev mm-btn mm-hidden"></a><a class="mm-title mm-hidden"></a></div>
-		<div class="mm-panels">
-<div class="mm-panel mm-opened mm-current" id="mm-2">
-			<a href="#" id="mobile-close-button">X</a>
-			<?php
-			wp_nav_menu( array(
-				'menu'       => 'mobile-nav',
-				'menu_class' => 'nav navbar-nav',
-				'container'  => false,
-			));
-			?>
-			<?php get_template_part('_template-parts/component', 'social-follow'); ?>
-</div>
-		</div>
-	</div>
-
+	
 	<div id="search-Wrapper">
 		<a href="#" id="search-Close"><i class="fa fa-close"></i></a>
 		<div class="container"><div class="row">
@@ -135,8 +131,8 @@
 						'items_wrap' => main_nav_wrap()
 					));
 					?>
+					
 					<a href="#off-canvas-nav" id="off-canvas-nav-button"></a>
-					<a href="#mobile-nav" id="mobile-nav-button"></a>
 				</div>
 			</nav>
 

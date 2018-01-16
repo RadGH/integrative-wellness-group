@@ -12,10 +12,11 @@ Author URI: http://www.alchemyandaim.com
  * The parts are imported in order of specificty.
  */
 
+@import "_vendor/bootstrap-flex.scss"; /* bootstrap flex */
+
 @import "_utils/variables"; /* variables*/
 @import "_utils/mixins"; /* mixins, extends etc.*/
 @import "_utils/bootstrap-breakpoints"; /* Bootstrap 4's media breakpoint mixins. */
-@import "_vendor/jquery-mmenu.all"; /* Mmenu JS styles */
 @import "_vendor/remodal"; /* remodal styles */
 @import "_vendor/remodal-default-theme"; /* remodal theme styles */
 @import "_vendor/owl-carousel"; /* Owl Carousel Styles */
@@ -143,7 +144,7 @@ General Styles
 }
 
 .banner-Signup {
-    background-image: url('_static/images/banner-BackgroundImage.jpg');
+    background-image: url('/wp-content/themes/wp-integrativewellness-theme/_static/images/banner-BackgroundImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -381,7 +382,7 @@ section.row {
             font-size: 1.9rem;
 
             &:after {
-                background-image: url('_static/images/icon-Arrow_Long-right.png');
+                background-image: url('/wp-content/themes/wp-integrativewellness-theme/_static/images/icon-Arrow_Long-right.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 position: absolute;

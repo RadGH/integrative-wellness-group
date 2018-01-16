@@ -3,7 +3,7 @@
  * Template Name: Test Page Template
  */
 
-get_header(menutest);
+get_header();
 ?>
 
 <?php
