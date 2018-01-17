@@ -13197,6 +13197,11 @@ section.section-Accordion .section-Accordion_Content .btn small {
   font-weight: 700;
 }
 
+.section-ServicesRows .section-ServicesRows_ServiceContent {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
 .section-ServicesRows .section-ServicesRows_ServiceContent h2 {
   margin-top: 0;
   text-transform: uppercase;
@@ -13238,6 +13243,10 @@ section.section-Accordion .section-Accordion_Content .btn small {
 
 .section-ServicesRows .section-ServicesRows_ServiceContent ul + p {
   margin-top: 2rem;
+}
+
+.section-ServicesRows_Button {
+  margin-top: 20px;
 }
 
 section.section-ServicesNumberBlocks {
@@ -14132,6 +14141,7 @@ body.page-template-default:not(.home):not(.page-success-stories):not(.page-our-t
 }
 
 .section-CallToActionBar {
+  margin-top: 8rem;
   margin-bottom: 8rem;
 }
 
@@ -14184,6 +14194,56 @@ body.page-template-default:not(.home):not(.page-success-stories):not(.page-our-t
     text-align: center;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+  }
+}
+
+/* Call to action: Contact Form */
+.section-CallToActionBar .cta-contact-form .gform_wrapper {
+  margin: 40px auto 0;
+  width: 750px;
+}
+
+.section-CallToActionBar .cta-contact-form form {
+  text-align: center;
+}
+
+/* Content columns section */
+section.section-ContentColumns {
+  margin-bottom: 80px;
+}
+
+section.section-ContentColumns .section-Header h2 {
+  color: #3eb7c0;
+  font-size: 2.7rem;
+}
+
+section.section-ContentColumns .content-col > p:first-child > img:first-child {
+  margin-bottom: 20px;
+}
+
+section.section-ContentColumns .content-col img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+section.section-ContentColumns .content-col {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  section.section-ContentColumns .section-Header {
+    text-align: center;
+  }
+  section.section-ContentColumns .content-col {
+    max-width: 380px;
+    margin: 0 auto 60px;
+    padding: 0;
+  }
+  section.section-ContentColumns {
+    margin-bottom: 20px;
   }
 }
 

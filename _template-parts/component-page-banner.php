@@ -8,7 +8,7 @@ $banner_button_text = get_field('banner_button_text');
 $banner_layout = get_field('banner_layout') ?: 'boxed'; ?>
 
 <?php // TODO: Parallax BG is not working ?>
-<div class="jumbotron jumbotron-fluid <?php if ( !$banner_image ) { echo 'no-img'; } ?> banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image: url('<?php echo $banner_image["url"]; ?>');">
+<div class="jumbotron jumbotron-fluid <?php if ( !$banner_image ) { echo 'no-img'; } ?> banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image: url('<?php echo (isset($banner_image['sizes']['large']) ? $banner_image['sizes']['large'] : $banner_image['url']); ?>');">
     <div class="container"><div class="row">
         <div class="col-xs-12">
             <?php if ( $banner_video ) { ?>

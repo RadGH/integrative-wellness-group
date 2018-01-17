@@ -1,4 +1,5 @@
 <?php
+
 if ( have_rows('content_sections') ) : ?>
 
 	<div class="container-fluid page-Content">
@@ -61,6 +62,12 @@ if ( have_rows('content_sections') ) : ?>
 										<div class="col-xs-12 col-md-6">
 											<div class="section-ServicesRows_ServiceContent">
 												<?php the_sub_field('content'); ?>
+												
+												<?php if ( $service_page_url ) { ?>
+												<div class="section-ServicesRows_Button">
+													<p><a href="<?php echo $service_page_url; ?>" class="btn btn-blue">Learn More</a></p>
+												</div>
+												<?php } ?>
 											</div>
 										</div>
 									</div>

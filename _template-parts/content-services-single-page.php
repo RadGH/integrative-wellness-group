@@ -9,10 +9,45 @@ if ( have_rows( 'content_sections' ) ) : ?>
 	while( have_rows( 'content_sections' ) ) : the_row(); ?>
 		
 		<?php
-		// todo:
-		// content_columns
-		// call-to-action_bar: contact_form and contact_form_id
-		if ( get_row_layout() == 'physicians' ) :
+		if ( get_row_layout() == 'content_columns' ) :
+			?>
+			
+			<section class="row section-ContentColumns">
+				<div class="container">
+						
+					<?php
+					if ( get_sub_field('title') ) :
+						?>
+						<header class="section-Header">
+							<h2><?php the_sub_field('title'); ?></h2>
+						</header>
+					<?php
+					endif;
+					?>
+					
+					<div class="row content-col-row">
+						<?php
+						$cols = (array) get_sub_field('columns');
+						if ( $cols ) {
+							$grid = 'col-md-4';
+							if ( count($cols) === 2 ) $grid = 'col-md-6';
+							if ( count($cols) === 1 ) $grid = 'col-md-12';
+							
+							foreach( $cols as $col ) {
+								?>
+								<div class="content-col <?php echo $grid; ?>">
+									<?php echo wpautop( $col['content'] ); ?>
+								</div>
+								<?php
+							}
+						}
+						?>
+					</div>
+				</div>
+			</section>
+		
+		<?php
+		elseif ( get_row_layout() == 'physicians' ) :
 			$lead_physician = get_sub_field( 'lead_physician' );
 			$supporting_staff = get_sub_field( 'supporting_staff' );
 			
@@ -433,6 +468,19 @@ if ( have_rows( 'content_sections' ) ) : ?>
 						</div>
 					
 					</div>
+					
+					<?php
+					if ( get_sub_field( 'contact_form' ) ) {
+						$num = get_sub_field( 'contact_form_id' );
+						?>
+						<div class="row cta-contact-form">
+							<div class="col-xs-12">
+								<?php echo do_shortcode( '[gravityform id="'. $num .'" title="false" description="false"]' ); ?>
+							</div>
+						</div>
+						<?php
+					}
+					?>
 				</div>
 			</section>
 		

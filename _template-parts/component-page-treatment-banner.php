@@ -9,7 +9,7 @@ $banner_button_text = get_field('banner_button_text');
 $banner_layout = get_field('banner_layout') ?: 'boxed'; ?>
 
 <?php // TODO: Parallax BG is not working ?>
-<div class="jumbotron jumbotron-fluid <?php if ( !$banner_image ) { echo 'no-img'; } ?> banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image:linear-gradient(rgba(0,0,0, <?php echo $banner_tint ?>), rgba(0,0,0, <?php echo $banner_tint ?>)),url('<?php echo $banner_image["url"]; ?>');">
+<div class="jumbotron jumbotron-fluid <?php if ( !$banner_image ) { echo 'no-img'; } ?> banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image:linear-gradient(rgba(0,0,0, <?php echo $banner_tint ?>), rgba(0,0,0, <?php echo $banner_tint ?>)),url('<?php echo (isset($banner_image['sizes']['large']) ? $bg_slider_banner_imagebanner_imagemg['sizes']['large'] : $banner_image['url']); ?>');">
     <div class="container"><div class="row">
         <div class="col-xs-12">
             <?php if ( $banner_video ) { ?>

@@ -157,7 +157,7 @@ while ( have_posts() ) : the_post(); ?>
                                 foreach ($post_objects as $post) :
                                     setup_postdata($post); ?>
                                     <div class="col-xs-12 col-md-6 col-lg-3 section-Team_Member">
-                                        <a href="<?php the_permalink(); ?>" class="img-hover"><?php the_post_thumbnail(); ?></a>
+                                        <a href="<?php the_permalink(); ?>" class="img-hover"><?php the_post_thumbnail( 'medium' ); ?></a>
                                         <p><?php the_title(); ?></p>
                                     </div>
                                 <?php
@@ -232,8 +232,8 @@ while ( have_posts() ) : the_post(); ?>
 
 	<?php
 	if ( has_post_thumbnail() ) {
-        $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url . '"></a>';
+        $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url[0] . '"></a>';
 	} ?>
 
 	<div class="post-ContentWrapper col-xs-12">
@@ -270,8 +270,8 @@ while ( have_posts() ) : the_post(); ?>
 
 	<?php
 	if ( has_post_thumbnail() ) {
-        $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url . '"></a>';
+		$thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url[0] . '"></a>';
 	} ?>
 
 	<div class="post-ContentWrapper col-xs-12">
@@ -309,8 +309,8 @@ while ( have_posts() ) : the_post(); ?>
 
 	<?php
 	if ( has_post_thumbnail() ) {
-        $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url . '"></a>';
+		$thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url[0] . '"></a>';
 	} ?>
 
 	<div class="post-ContentWrapper col-xs-12">
@@ -348,8 +348,8 @@ while ( have_posts() ) : the_post(); ?>
 
 	<?php
 	if ( has_post_thumbnail() ) {
-        $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url . '"></a>';
+		$thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+		echo '<a class="post-Thumbnail col-xs-12" href="' . get_permalink() . '"><img src="' . $thumbnail_url[0] . '"></a>';
 	} ?>
 
 	<div class="post-ContentWrapper col-xs-12">

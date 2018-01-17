@@ -16,7 +16,7 @@ if( have_rows('header_slider') ): ?>
 	    $banner_layout = get_sub_field('banner_layout') ?: 'boxed';
 ?>
 
-	<div class="jumbotron jumbotron-fluid slider-header slide banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image:linear-gradient(rgba(0,0,0, 0.40), rgba(0,0,0, 0.40)),url(<?php echo $bg_slider_img['url']; ?>);">
+	<div class="jumbotron jumbotron-fluid slider-header slide banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image:linear-gradient(rgba(0,0,0, 0.40), rgba(0,0,0, 0.40)),url(<?php echo (isset($bg_slider_img['sizes']['large']) ? $bg_slider_img['sizes']['large'] : $bg_slider_img['url']); ?>);">
    
     <div class="container">
     	<div class="row">
