@@ -507,11 +507,28 @@ Section: Physicians
 	overflow: hidden;
 }
 
+@media ( max-width: 768px ) {
+	.section-Physicians .lead-column {
+		max-width: 300px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.section-Physicians .supporting-column .-image {
+		max-width: 200px;
+		margin: 0 auto;
+	}
+
+	.section-Physicians .supporting-column .physician {
+		margin-bottom: 30px;
+	}
+}
+
 /*******************************
 Section: Image And Content
 *******************************/
 section.section-Image_And_Content {
-	margin: 55px 0 70px;
+	margin: 55px 0;
 }
 
 section.section-Image_And_Content .section-Header {
@@ -1652,7 +1669,7 @@ section.section-ServicesNumberBlocks {
 }
 
 /* Small icon layout */
-section.section-Icons-services section.row.section-Header.row.section-Header h2 {
+section.section-Icons-services .section-Header h2 {
 	color: $color-pelorous;
 	font-size: 2.7rem;
 }
