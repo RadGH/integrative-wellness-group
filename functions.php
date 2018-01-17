@@ -177,7 +177,7 @@ function aa_header_banner() {
 		$header_banner = get_field('include_header_banner');
 		$override_form = get_field('override_ifs_form');
 	}
-	$form_code;
+	$form_code = false;
 
 	if ( $override_form ) {
 		// If on the blog page

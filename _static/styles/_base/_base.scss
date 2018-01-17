@@ -166,3 +166,18 @@ br {
         display: none;
     }
 }
+
+.image-center-stretch {
+    position: absolute;
+    width: 1200px;
+    height: 100%;
+    left: 50%;
+    margin-left: -600px;
+    text-align: center;
+
+    img {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+    }
+}
