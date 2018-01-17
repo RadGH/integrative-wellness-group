@@ -1127,6 +1127,7 @@ Section: Success Stories (simplified0
 *******************************/
 .success-stories-simplified {
 	margin-top: 50px;
+	margin-bottom: 120px;
 }
 
 .success-stories-simplified blockquote {
@@ -1699,6 +1700,10 @@ section.section-ServicesNumberBlocks {
 }
 
 /* Small icon layout */
+section.section-Icons-services {
+	margin: 25px 0 100px;
+}
+
 section.section-Icons-services .section-Header h2 {
 	color: $color-pelorous;
 	font-size: 2.7rem;
