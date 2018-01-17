@@ -35,7 +35,7 @@ if ( have_rows( 'content_sections' ) ) : ?>
 						$image_src = $image_id ? wp_get_attachment_image_src( $image_id, 'medium' ) : false;
 						?>
 						<div class="col-md-12 physician">
-							<div class="-image"><a href="<?php echo get_permalink($staff_id); ?>"><div class="circle" style="<?php if ( $image_src ) echo 'background-image: url(', esc_attr($image_src[0]), ');'; ?>"></a></div></div>
+							<div class="-image"><a href="<?php echo get_permalink($staff_id); ?>"><span class="circle" style="<?php if ( $image_src ) echo 'background-image: url(', esc_attr($image_src[0]), ');'; ?>"></span></a></div>
 							<div class="-name"><a href="<?php echo get_permalink($staff_id); ?>"><?php echo get_the_title( $staff_id ); ?></a></div>
 						</div>
 					</div>

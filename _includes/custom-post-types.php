@@ -22,7 +22,7 @@ function aa_register_team_member() {
         'labels' => $labels,
         'hierarchical' => false,
 
-        'supports' => array( 'title', 'thumbnail' ),
+        'supports' => array( 'title', 'thumbnail', 'author', 'revisions' ),
 
         'public' => true,
         'show_ui' => true,
@@ -67,7 +67,7 @@ function aa_register_success_story() {
         'labels' => $labels,
         'hierarchical' => false,
 
-        'supports' => array( 'title' ),
+        'supports' => array( 'title', 'author', 'revisions' ),
 
         'public' => true,
         'show_ui' => true,
@@ -112,7 +112,7 @@ function aa_register_event() {
         'labels' => $labels,
         'hierarchical' => false,
 
-        'supports' => array( 'title', 'thumbnail' ),
+        'supports' => array( 'title', 'thumbnail', 'author', 'revisions' ),
 
         'public' => true,
         'show_ui' => true,
