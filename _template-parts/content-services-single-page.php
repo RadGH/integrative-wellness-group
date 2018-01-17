@@ -10,10 +10,99 @@ if ( have_rows( 'content_sections' ) ) : ?>
 		
 		<?php
 		// todo:
-		// physicians
 		// content_columns
 		// call-to-action_bar: contact_form and contact_form_id
-		if ( get_row_layout() == 'image_and_content' ) :
+		if ( get_row_layout() == 'physicians' ) :
+			$lead_physician = get_sub_field( 'lead_physician' );
+			$supporting_staff = get_sub_field( 'supporting_staff' );
+			
+			if ( $lead_physician ) {
+				ob_start();
+				?>
+				<div class="physician-group lead-physician">
+					<div class="physician-header">
+						<h2>Lead Physician</h2>
+					</div>
+				
+					<div class="row physician-row">
+						<?php
+						$staff_id = $lead_physician;
+						
+						$image_id = get_field( 'physician_portrait', $staff_id, false );
+						if ( !$image_id ) $image_id = get_post_thumbnail_id( $staff_id );
+						if ( !$image_id ) $image_id = get_field( 'banner_image', $staff_id, false );
+						
+						$image_src = $image_id ? wp_get_attachment_image_src( $image_id, 'medium' ) : false;
+						?>
+						<div class="col-md-12 physician">
+							<div class="-image"><a href="<?php echo get_permalink($staff_id); ?>"><div class="circle" style="<?php if ( $image_src ) echo 'background-image: url(', esc_attr($image_src[0]), ');'; ?>"></a></div></div>
+							<div class="-name"><a href="<?php echo get_permalink($staff_id); ?>"><?php echo get_the_title( $staff_id ); ?></a></div>
+						</div>
+					</div>
+				</div>
+				<?php
+				$lead_physician_html = ob_get_clean();
+			}
+			
+			if ( is_array($supporting_staff) && $supporting_staff ) {
+				
+				ob_start();
+				?>
+				<div class="physician-group supporting-staff">
+					<div class="physician-header">
+						<h2>Supporting Staff</h2>
+					</div>
+					
+					<div class="row physician-row">
+						<?php
+						foreach( (array) $supporting_staff as $staff_id ) {
+							$image_id = get_field( 'physician_portrait', $staff_id, false );
+							if ( !$image_id ) $image_id = get_post_thumbnail_id( $staff_id );
+							if ( !$image_id ) $image_id = get_field( 'banner_image', $staff_id, false );
+							
+							$image_src = $image_id ? wp_get_attachment_image_src( $image_id, 'medium' ) : false;
+							?>
+							<div class="col-md-<?php echo round(12 / count($supporting_staff)); ?> physician">
+								<div class="-image"><a href="<?php echo get_permalink($staff_id); ?>"><div class="circle" style="<?php if ( $image_src ) echo 'background-image: url(', esc_attr($image_src[0]), ');'; ?>"></a></div></div>
+								<div class="-name"><a href="<?php echo get_permalink($staff_id); ?>"><?php echo get_the_title( $staff_id ); ?></a></div>
+							</div>
+							<?php
+						}
+	                    ?>
+					</div>
+				</div>
+				<?php
+				$supporting_staff_html = ob_get_clean();
+			}
+			?>
+			
+			<section class="row section-Physicians">
+				<div class="container">
+					<div class="row">
+						
+						<?php if ( $lead_physician && $supporting_staff ) { ?>
+							<div class="col-md-4 lead-column">
+								<?php echo $lead_physician_html; ?>
+							</div>
+							<div class="col-md-8 supporting-column">
+								<?php echo $supporting_staff_html; ?>
+							</div>
+						<?php }elseif ( $lead_physician ) { ?>
+							<div class="col-md-12 lead-column">
+								<?php echo $lead_physician_html; ?>
+							</div>
+						<?php }elseif ( $supporting_staff ) { ?>
+							<div class="col-md-12 supporting-column">
+								<?php echo $supporting_staff_html; ?>
+							</div>
+						<?php } ?>
+					
+					</div>
+				</div>
+			</section>
+		
+		<?php
+		elseif ( get_row_layout() == 'image_and_content' ) :
 			?>
 			
 			<section class="row section-Image_And_Content theme-<?php the_sub_field( 'theme' ); ?>">
