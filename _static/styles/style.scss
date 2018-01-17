@@ -1455,9 +1455,9 @@ section.section-ServicesNumberBlocks {
 
 .section-Includes {
 
-    .section-Header h2 {
+    section.row.section-Header h2 {
         color: $color-pelorous;
-        font-size: 2.7rem !important;
+        font-size: 2.7rem;
     }
 
     .section-Includes_Item {
@@ -1477,6 +1477,32 @@ section.section-ServicesNumberBlocks {
             margin-bottom: 2rem;
         }
     }
+}
+
+/* Small icon layout */
+section.section-Icons-services section.row.section-Header.row.section-Header h2 {
+    color: $color-pelorous;
+    font-size: 2.7rem;
+}
+
+.section-Icons-services.icon-size-small .service-icon {
+    width: 54px;
+    height: 54px;
+    padding: 17px 0;
+    font-size: 2.2rem;
+}
+
+.section-Icons-services.icon-size-small .fa-folder-open {
+    margin-left: 4px;
+}
+.section-Icons-services.icon-size-small .fa-area-chart {
+    margin-left: 2px;
+}
+.section-Icons-services.icon-size-small .fa-puzzle-piece {
+    margin-left: 4px;
+}
+.section-Icons-services.icon-size-small .fa-leaf {
+    margin-left: 1px;
 }
 
 body.page-template-template-services {

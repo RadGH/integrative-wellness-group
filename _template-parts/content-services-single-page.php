@@ -274,9 +274,19 @@ if ( have_rows('content_sections') ) : ?>
 				
 			
 				<?php elseif ( get_row_layout() == 'icon_text_blocks' ) : ?>
-					<section class="row section-Icons-services">
+					<section class="row section-Icons-services icon-size-<?php echo esc_attr(get_sub_field('icon_size') ?: 'large'); ?>">
+						
+						<?php
+						if ( get_sub_field('header') ) : ?>
+							<header class="col-xs-12 section-Header">
+								<h2><?php the_sub_field('header'); ?></h2>
+							</header>
+						<?php
+						endif; ?>
+						
                        		 <div class="container">
                        		 <div class="row">
+		                        
 			<?php if ( have_rows( 'icon_blocks' ) ) : ?>
 				<?php while ( have_rows( 'icon_blocks' ) ) : the_row(); ?>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
