@@ -12,10 +12,11 @@ if( have_rows('header_slider') ): ?>
 		$bg_slider_text = get_sub_field('slider_text');	
 		$banner_video = get_sub_field('banner_video_url');
 		$banner_button_url = get_sub_field('banner_button_url');
-		$banner_button_text = get_sub_field('banner_button_text'); 
+		$banner_button_text = get_sub_field('banner_button_text');
+	    $banner_layout = get_sub_field('banner_layout') ?: 'boxed';
 ?>
 
-	<div class="jumbotron jumbotron-fluid slider-header slide" style="background-image:linear-gradient(rgba(0,0,0, 0.40), rgba(0,0,0, 0.40)),url(<?php echo $bg_slider_img['url']; ?>);">
+	<div class="jumbotron jumbotron-fluid slider-header slide banner-layout-<?php echo esc_attr($banner_layout); ?>" style="background-image:linear-gradient(rgba(0,0,0, 0.40), rgba(0,0,0, 0.40)),url(<?php echo $bg_slider_img['url']; ?>);">
    
     <div class="container">
     	<div class="row">

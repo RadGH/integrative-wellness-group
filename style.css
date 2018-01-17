@@ -11374,6 +11374,57 @@ Footer
   border-right: 1px solid #000000;
 }
 
+/* Jumbotron customizations */
+.jumbotron h1,
+.jumbotron h2 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.6% auto;
+}
+
+/* Jumbotron: Boxed Text layout */
+.jumbotron.banner-layout-boxed h1,
+.jumbotron.banner-layout-boxed h2 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Jumbotron: Clean layout */
+.jumbotron.banner-layout-clean {
+  position: relative;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 9.5vh;
+  min-height: 500px;
+}
+
+.jumbotron.banner-layout-clean:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron.banner-layout-clean h1 {
+  font-size: 4.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron.banner-layout-clean h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* styling for larger components/sections; e.g. nav, header, footer*/
 /***************************************
 			NEW PAGE CONTENT
