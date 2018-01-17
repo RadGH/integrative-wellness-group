@@ -26,7 +26,7 @@ while ( have_posts() ) : the_post(); ?>
                 <?php
                 if ( get_row_layout() == 'programs' ) :
                    ?>
-                    <section class="row section-Services">
+                    <section class="row section-Programs">
                         <div class="container"><div class="row">
 
                             <?php
@@ -38,40 +38,45 @@ while ( have_posts() ) : the_post(); ?>
                             endif; ?>
 
                             <?php
-                            if ( have_rows('services') ) : ?>
+                            if ( have_rows('programs') ) : ?>
 
-                                <div class="col-xs-12 section-Services_Blocks">
+                                <div class="col-xs-12 row no-gutters section-Programs_Blocks">
 
                                     <?php
-                                    while ( have_rows('services') ) : the_row();
-                                        $service_image = get_sub_field('service_image');
-                                        $service_post_object = get_sub_field('service_page');
-                                        // override $post temporarily
-                                    	$post = $service_post_object;
-                                    	setup_postdata($post);
-                                            $service_page_url = get_permalink();
-                                        wp_reset_postdata(); ?>
-
-                                        <div class="section-Services_Block">
-                                            <a href="<?php echo $service_page_url; ?>" class="section-Services_Content" style="background-image: url('<?php echo $service_image["url"]; ?>');">
-                                                <span><?php the_sub_field('service_text'); ?></span>
+                                    while ( have_rows('programs') ) : the_row();
+                                        $title = get_sub_field('title');
+                                        $summary = get_sub_field('summary');
+                                        $background_image = get_sub_field('background_image');
+                                        $url = get_sub_field('url');
+                                        ?>
+                                        <div class="section-Programs_Block col-lg-3 col-sm-6">
+                                            <a href="<?php echo esc_html($url); ?>" class="section-Programs_Content">
+	                                            <span class="background"><img src="<?php echo $background_image["url"]; ?>" alt="<?php echo esc_attr($background_image['alt'] || $background_image['title']); ?>" /></span>
+	                                            <span class="overlay"></span>
+	                                            <span class="inner">
+	                                                <span class="title"><?php echo $title; ?></span>
+	                                                <span class="summary"><?php echo $summary; ?></span>
+	                                            </span>
                                             </a>
                                         </div>
 
                                     <?php
                                     endwhile; ?>
 
-                                    <div class="section-Services_Block section-Services_Block-fulllist">
-                                        <div class="section-Services_Content">
-                                            <h3><a href="<?php bloginfo('url'); ?>/cookbook-quiz/">Don't see what you're looking for?</a></h3>
-                                            <a href="<?php bloginfo('url'); ?>/service">See the full list</a>
-                                        </div>
-                                    </div>
-
                                 </div>
 
                             <?php
                             endif; ?>
+		
+	                        <?php if ( get_sub_field('button_url') ) {
+	                        	$btn_text = get_sub_field('button_text') ?: 'Learn More';
+	                        	// Wrap *asterisk* in span.strong element
+	                        	if ( strpos( $btn_text, '*' ) !== false ) $btn_text = preg_replace('/\*{1}([^*]*)\*{1}/', '<span class="strong">$1</span>', $btn_text);
+	                        	?>
+		                        <div class="col-xs-12 row no-gutters section-Programs_CTA">
+			                        <a href="<?php the_sub_field('button_url'); ?>" class="btn btn-blue"><?php echo $btn_text; ?></a>
+		                        </div>
+	                        <?php } ?>
 
                         </div></div>
                     </section>

@@ -267,6 +267,184 @@ section.row {
     }
 }
 
+/*******************************
+Section: Programs
+*******************************/
+ section.row.section-Programs .section-Header {
+     margin-top: 14px;
+     margin-bottom: 20px;
+ }
+
+ section.row.section-Programs .section-Header h2 {
+     font-size: 3.5rem;
+ }
+
+ div.row div.section-Programs_Block {
+     padding: 0 4px;
+ }
+
+ a.section-Programs_Content {
+     position: relative;
+     display: block;
+     overflow: hidden;
+ }
+
+ a.section-Programs_Content .background {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     z-index: 1;
+
+     display: block;
+     width: 1000px; /* Size is irrelevant here, just needs to be larger than the image for proper centering */
+     margin-left: -500px;
+
+     text-align: center;
+     background: #ebebeb;
+ }
+
+ a.section-Programs_Content .background img {
+     height: 100%;
+     width: auto;
+     max-width: none;
+     right: auto;
+     left: auto;
+
+     transform: scale(1.25);
+     transition: transform 0.3s ease-out;
+ }
+
+ a.section-Programs_Content:hover .background img {
+     transform: scale(1.6);
+     transition: transform 0.5s ease-out;
+ }
+
+ a.section-Programs_Content span.overlay {
+     content: '';
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+
+     z-index: 2;
+
+     background-color: rgba(0, 0, 0, 0.08);
+     transition: background-color 0.4s linear;
+ }
+
+ a.section-Programs_Content:hover span.overlay {
+     background-color: rgba(72, 173, 178, 0.2);
+     transition: background-color 0.4s linear;
+ }
+
+ a.section-Programs_Content span.inner {
+     display: block;
+     position: relative;
+     z-index: 3;
+     padding: 0 10px;
+     text-align: center;
+     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+ }
+
+ a.section-Programs_Content .title {
+     display: block;
+     margin: 0 0 10px;
+
+     color: #fff;
+     font-size: 2.5rem;
+     line-height: 2.7rem;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+
+ a.section-Programs_Content .summary {
+     display: block;
+     margin: 0 0 10px;
+
+     color: #fff;
+     font-size: 1.5rem;
+     line-height: 2.3rem;
+     font-style: italic;
+     text-transform: uppercase;
+ }
+
+ @media ( max-width: 544px ) {
+     /* Not medium screens */
+     .section-Programs_Blocks,
+     .section-Programs_CTA {
+         margin: 0;
+     }
+
+     a.section-Programs_Content {
+         padding: 120px 0;
+     }
+ }
+
+ @media ( min-width: 545px ) {
+     /* Medium screens + */
+     a.section-Programs_Content {
+         padding-top: 80%;
+     }
+
+     a.section-Programs_Content span.inner {
+         position: absolute;
+         top: 50%;
+         left: 0;
+         right: 0;
+         transform: translate(0, -50%);
+     }
+ }
+
+ @media ( max-width: 991px ) {
+     /* Not large screens */
+     a.section-Programs_Content {
+         margin-bottom: 6px;
+     }
+ }
+
+ @media ( min-width: 992px ) {
+     /* Large screens + */
+     a.section-Programs_Content {
+         padding-top: 131.66%;
+     }
+ }
+
+ .section-Programs_CTA {
+     padding: 0 19px;
+     margin-top: 15px;
+ }
+
+ .section-Programs_CTA .btn {
+     display: block;
+     width: 100%;
+
+     padding: 21px 0;
+     font-size: 1.5rem;
+     text-transform: none;
+     font-style: italic;
+     white-space: normal;
+
+     background-color: #48adb2;
+ }
+
+ .section-Programs_CTA .btn:hover {
+     background-color: #3eb7c0;
+ }
+
+ .section-Programs_CTA .btn span.strong {
+     font-size: 2.5rem;
+     margin-right: 3px;
+     text-transform: uppercase;
+     font-style: normal;
+     font-weight: 700;
+ }
+
+ /*******************************
+ Section: Services
+ *******************************/
 .section-Services {
 
     .section-Header h2 {

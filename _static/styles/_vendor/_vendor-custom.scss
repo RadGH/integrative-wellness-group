@@ -67,7 +67,7 @@ html .pushcrew-chicklet-position-tr {
 
 // Fix button floating in mega menu when sliding back
 ul.mega-sub-menu {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 // Bootstrap columns with no padding (supplement of the missing no-gutter class in this version)

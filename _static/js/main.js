@@ -213,30 +213,18 @@ jQuery(function($) {
 			successStoriesSlider();
 		}
 
-		$('#wpadminbar').addClass('wp-admin-bar');
-
 		// Init the off-canvas nav
-		$('#off-canvas-nav').mmenu({
-			'navbar': false,
-			extensions: ["position-right"],
-			'offCanvas': {
-				'pageSelector': '.site',
-            	'zposition': 'front',
-				'position': 'right'
-        	}
-		}, {
-			// configuration
-			classNames: {
-				fixedElements: {
-					fixed: "wp-admin-bar",
-					sticky: "wp-admin-bar"
-				}
-			}
-		});
-		var offCanvasAPI = $('#off-canvas-nav').data('mmenu');
-		$('#off-canvas-close-button').click(function() {
-			offCanvasAPI.close();
-		});
+		$('#off-canvas-nav')
+			.mmenu({
+				'navbar': false,
+				"extensions": [
+					"position-front",
+					"position-right"
+				]
+			})
+			.click(function() {
+				jQuery(this).data('mmenu').close();
+			});
 
 		// Init Sticky-kit for the program price block
 		$('.main-nav').stick_in_parent()
