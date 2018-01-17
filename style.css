@@ -12930,6 +12930,35 @@ Section: Services
   content: '\f105';
 }
 
+/*******************************
+Section: Success Stories (simplified0
+*******************************/
+.success-stories-simplified {
+  margin-top: 50px;
+}
+
+.success-stories-simplified blockquote {
+  max-width: 475px;
+}
+
+.success-stories-simplified blockquote p {
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  margin: 0 0 20px;
+}
+
+.success-stories-simplified blockquote h4 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .success-stories-simplified .story {
+    margin: 0 15px 30px;
+  }
+}
+
 section.section-Content_FullWidth {
   background-size: cover;
   background-repeat: no-repeat;

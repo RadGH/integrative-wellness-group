@@ -189,7 +189,11 @@ if ( have_rows( 'content_sections' ) ) : ?>
 			$bg_color_obj = get_sub_field_object( 'background_color' );
 			if ( $bg_color_obj ) {
 				$bg_color = 'bgc-' . $bg_color_obj['value'];
-			} ?>
+			}
+			$success_stories = get_sub_field( 'success_stories' );
+			$theme = get_sub_field( 'theme' ) ?: 'full';
+		
+			?>
 			
 			<section class="row section-SuccessStory <?php echo $bg_color; ?>"
 				<?php if ( $section_id ) {
@@ -208,44 +212,78 @@ if ( have_rows( 'content_sections' ) ) : ?>
 						
 						<div class="col-xs-12">
 							<?php
-							$success_stories_objs = get_sub_field( 'success_stories' );
-							if ( $success_stories_objs ) : ?>
-								<div class="owl-carousel" id="success-stories-slider">
+							if ( $theme === 'simple' && is_array($success_stories) ) {
+								// New simplified 2-column layout
+								?>
+								<div class="success-stories-simplified row">
 									<?php
-									foreach( $success_stories_objs as $post ) :
+									// Show the first two, randomly
+									shuffle( $success_stories );
+									foreach( $success_stories as $i => $post ) {
+										if ( $i >= 2 ) continue;
+										
 										setup_postdata( $post );
+										
 										$testimonial_title = get_field( 'client_name' );
-										if ( !$testimonial_title ) {
-											$testimonial_title = get_the_title();
-										}
+										if ( !$testimonial_title ) $testimonial_title = get_the_title();
+										
 										$testimonial_description = get_field( 'client_description' );
-										$testimonial_image = get_field( 'client_image' );
-										if ( !$testimonial_image ) {
-											$testimonial_image['url'] = $images_dir . '/ph-Profile.jpg';
-										} ?>
-										<div class="item card testimonial">
-											<img class="testimonial-image" src="<?php echo $testimonial_image['url']; ?>" alt="<?php echo $testimonial_image['alt']; ?>" />
+										?>
+										<div class="story col-md-6">
 											<blockquote>
-												<?php the_field( 'client_testimonial' ); ?>
+												<?php echo wpautop( '<span class="quo">&ldquo;</span>' . get_field( 'client_testimonial', $post->ID, false ) . '<span class=quo">&rdquo;</span>' ); ?>
 												<cite>
-													<h4><?php echo $testimonial_title; ?></h4>
-													<?php if ( $testimonial_description ) { ?><p><?php echo $testimonial_description; ?></p><?php } ?>
+													<h4><?php echo $testimonial_title; ?><?php if ( $testimonial_description ) { ?><span class="story-description">, <?php echo $testimonial_description; ?></span><?php } ?></h4>
 												</cite>
 											</blockquote>
 										</div>
-									<?php
-									endforeach; ?>
+										<?php
+									}
+									wp_reset_postdata();
+									?>
 								</div>
 								<?php
-								wp_reset_postdata();
-							endif; ?>
+							}else{
+								// Old slider layout
+								if ( $success_stories ) : ?>
+									<div class="owl-carousel" id="success-stories-slider">
+										<?php
+										foreach( $success_stories as $post ) :
+											setup_postdata( $post );
+											$testimonial_title = get_field( 'client_name' );
+											if ( !$testimonial_title ) {
+												$testimonial_title = get_the_title();
+											}
+											$testimonial_description = get_field( 'client_description' );
+											$testimonial_image = get_field( 'client_image' );
+											if ( !$testimonial_image ) {
+												$testimonial_image['url'] = $images_dir . '/ph-Profile.jpg';
+											} ?>
+											<div class="item card testimonial">
+												<img class="testimonial-image" src="<?php echo $testimonial_image['url']; ?>" alt="<?php echo $testimonial_image['alt']; ?>" />
+												<blockquote>
+													<?php the_field( 'client_testimonial' ); ?>
+													<cite>
+														<h4><?php echo $testimonial_title; ?></h4>
+														<?php if ( $testimonial_description ) { ?><p><?php echo $testimonial_description; ?></p><?php } ?>
+													</cite>
+												</blockquote>
+											</div>
+										<?php
+										endforeach; ?>
+									</div>
+									<?php
+									wp_reset_postdata();
+								endif;
+							}
+							?>
 						</div>
 					
 					</div>
 				</div>
 			</section>
-		
-		<?php
+			
+			<?php
 		elseif ( get_row_layout() == 'includes' ) :
 			$section_id = get_sub_field( 'section_id' );
 			$bg_color_obj = get_sub_field_object( 'background_color' );
